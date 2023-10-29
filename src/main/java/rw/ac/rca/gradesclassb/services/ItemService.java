@@ -8,7 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import rw.ac.rca.gradesclassb.models.Item;
 import rw.ac.rca.gradesclassb.repositories.ItemRepository;
-import com.example.classbjunit.dto.UpdateItemDto;
+//import com.example.classbjunit.dto.UpdateItemDto;
 import rw.ac.rca.gradesclassb.dtos.
 @Service
 public class ItemService {

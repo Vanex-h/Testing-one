@@ -1,4 +1,4 @@
-package rw.ac.rca.gradesclassb.services;
+package rw.ac.rca.gradesclassb.utils;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -14,10 +14,10 @@ import static org.mockito.Mockito.when;
 
 
 @ExtendWith(SpringExtension.class)
-public class MathLibServiceImplTest {
+public class MathLibServiceTest {
 
     @Mock
-    IMathLibRepository mathLibRepository;
+    MathLibRepository mathLibRepository;
     @InjectMocks
     private MathLibServiceImpl mathLibService;
 
