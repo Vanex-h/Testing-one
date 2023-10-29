@@ -1,5 +1,6 @@
 package rw.ac.rca.gradesclassb.utils;
 
+import org.apache.commons.lang3.builder.ToStringExclude;
 import org.junit.jupiter.api.Test;
 import org.testng.Assert;
 
@@ -9,8 +10,15 @@ public class SimpleCalculatorTest {
 
     @Test
     void givenTwoNumbers_whenAdded_thenReturnSum(){
+        //given, act, assert
         int actual = SimpleCalculator.add(1,4);
         int expected  = 5;
+        Assert.assertEquals(actual,expected);
+    }
+    @Test
+    void givenTwoNumbers_whenAdded_returnNumber(){
+        int actual= SimpleCalculator.add(4,0);
+        int expected= 4;
         Assert.assertEquals(actual,expected);
     }
     @Test
@@ -18,6 +26,12 @@ public class SimpleCalculatorTest {
         int actual = SimpleCalculator.add(0,0);
         int expected = 0;
         Assert.assertEquals(actual,expected);
+    }
+    @Test
+    void givenTwoNumbers_whenSubtracted_returnDifference(){
+        int actual= SimpleCalculator.subtract(10,3);
+        int expected= 7;
+        Assert.assertEquals(actual, expected);
     }
     @Test
     void givenTwoNumbers_whenDivided_returnQuotient(){
