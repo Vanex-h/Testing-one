@@ -14,19 +14,12 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 public class CreateStudentCourseMarkDTO {
-
     private UUID studentId;
-
     private UUID courseId;
-
     private Double score;
-
     private Double passMark;
-
     private Double outOf;
-
     private String academicYear;
-
     @Enumerated (EnumType.STRING)
     private EDecision decision;
 }

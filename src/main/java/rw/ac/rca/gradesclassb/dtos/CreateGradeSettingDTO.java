@@ -11,10 +11,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class CreateGradeSettingDTO {
-
     private Double minScore;
-
     private Double maxScore;
-
     private String grade;
 }
