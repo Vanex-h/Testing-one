@@ -15,22 +15,14 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 public class CreateDeliberationDTO {
-
     private UUID studentId;
-
     private String academicYear;
-
     private Double totalScore;
-
     private Double totalPassMark;
-
     private Double totalOutOf;
-
     private Integer position;
-
     @Enumerated (EnumType.STRING)
     private EDecision decision;
-
     @Override
     public String toString() {
         return "{" +
