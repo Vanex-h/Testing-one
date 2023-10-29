@@ -1,8 +1,9 @@
 package rw.ac.rca.gradesclassb.models;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Transient;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Transient;
 @Entity
 public class Item {
     public Item(int id, String name, int price, int quantity) {

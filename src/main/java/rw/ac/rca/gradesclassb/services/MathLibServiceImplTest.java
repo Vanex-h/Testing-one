@@ -17,7 +17,7 @@ import static org.mockito.Mockito.when;
 public class MathLibServiceImplTest {
 
     @Mock
-    IMathLibRepository mathLibRepository;
+    MathLibRepository mathLibRepository;
     @InjectMocks
     private MathLibServiceImpl mathLibService;
 

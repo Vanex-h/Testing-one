@@ -1,5 +1,4 @@
 package rw.ac.rca.gradesclassb.services;
-
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,8 +7,18 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import rw.ac.rca.gradesclassb.models.Item;
 import rw.ac.rca.gradesclassb.repositories.ItemRepository;
-//import com.example.classbjunit.dto.UpdateItemDto;
-import rw.ac.rca.gradesclassb.dtos.
+import  rw.ac.rca.gradesclassb.dtos.UpdateItemDto;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
+import org.testng.Assert;
+import rw.ac.rca.gradesclassb.models.MathLib;
+import rw.ac.rca.gradesclassb.repositories.MathLibRepository;
+import rw.ac.rca.gradesclassb.services.impl.MathLibServiceImpl;
+
+import static org.mockito.Mockito.when;
 @Service
 public class ItemService {
     @Autowired
